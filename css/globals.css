@@ -1,5 +1,5 @@
 body {
-  color: var(--primary);
+  color: var(--global-white);
   font-family: var(--main-font-family);
   background-color: var(--global-white);
 }
@@ -15,7 +15,13 @@ main {
 }
 
 [class*='__container'] {
-  max-width: 61.875rem; /* 990/16 */
+  max-width: 60rem; /* 960/16 */
   margin-inline: auto;
-  padding-inline: 0.9375rem; /* 15/16 */
+  padding-inline: 1.875rem; /* 30/16 */
+  width: 100%;
+}
+@media (max-width: 47.9988em) {
+  [class*='__container'] {
+    padding-inline: 0.9375rem; /* 15/16 */
+  }
 }
