@@ -160,12 +160,15 @@
   }
   .model--base .model__img {
     width: 78.8%; /* 617/783 */
+    aspect-ratio: 617 / 301;
   }
   .model--mid .model__img {
     width: 75.899%; /* 655/863 */
+    aspect-ratio: 655 / 301;
   }
   .model--top .model__img {
-    width: 74.111%; /* 667/900 */
+    width: 74.556%; /* 671/900 */
+    aspect-ratio: 671 / 249;
   }
   .model__price {
     position: absolute;
