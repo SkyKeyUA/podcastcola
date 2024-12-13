@@ -2,7 +2,11 @@
   /* colors */
   --primary: #2b2b2b;
   --global-white: #ffffff;
+  --global-black: #000000;
   --global-pink-100: #ff00ff;
+  --global-purple-100: #9900ff;
+  --global-purple-90: #880dfa;
   --global-blue-100: #00ffff;
+  --global-grey-20: #d2d2d2;
   --main-font-family: 'Montserrat', sans-serif;
 }

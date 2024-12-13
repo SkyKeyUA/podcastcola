@@ -91,10 +91,59 @@
   aspect-ratio: 368 / 184;
   font-size: 0;
 }
-.columns-thumbnails__column--video iframe {
+.columns-thumbnails__column--video iframe,
+.model__img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.car__model {
+}
+.model {
+  position: relative;
+  margin-inline: auto 0;
+}
+.model--base {
+  max-width: 48.9375rem; /* 783/16 */
+}
+.model--mid {
+  max-width: 53.9375rem; /* 863/16 */
+}
+.model__title {
+  font-weight: 900;
+  margin-block-end: 0.625rem; /* 10/16 */
+}
+.model__month {
+  font-weight: 600;
+  font-size: 0.75rem; /* 12/16 */
+}
+.model__month span {
+  font-size: 1.875rem; /* 30/16 */
+}
+.model--base .model__img {
+  aspect-ratio: 617 / 301;
+  max-width: 38.5625rem; /* 617/16 */
+}
+.model--mid .model__img {
+  aspect-ratio: 655 / 301;
+  max-width: 40.9375rem;
+}
+.model__price {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  border-radius: 1rem;
+}
+.model--base .model__price {
+  background-color: var(--global-white);
+  color: var(--global-black);
+}
+.model--mid .model__price {
+  background-color: var(--global-purple-100);
+  color: var(--global-white);
+}
+.model--top .model__price {
+  background: linear-gradient(98deg, #f90 0%, #ff0 100%);
+  color: var(--global-white);
 }
 @media (min-width: 47.9988em) {
   .columns-thumbnails--video {
@@ -105,6 +154,28 @@
   }
   .columns-thumbnails--video .columns-thumbnails__column {
     max-width: 23rem; /* 368/16 */
+  }
+  .model__img {
+    margin-inline: auto 0;
+  }
+  .model--base .model__img {
+    width: 78.8%; /* 617/783 */
+  }
+  .model--mid .model__img {
+    width: 75.899%; /* 655/863 */
+  }
+  .model--top .model__img {
+    width: 74.111%; /* 667/900 */
+  }
+  .model__price {
+    position: absolute;
+    top: 37.209%; /* 112/301 */
+    left: 0;
+    width: 81.226%; /* 636/783 */
+    z-index: -1;
+  }
+  .model--top .model__price {
+    top: 30%;
   }
 }
 @media (min-width: 29.9988em) {
@@ -131,6 +202,15 @@
   }
   .columns-thumbnails--video .columns-thumbnails__column:not(:last-child) {
     margin-block-end: 1.625rem;
+  }
+  .model__img {
+    margin-inline: auto;
+    margin-block-end: 1rem;
+  }
+  .model__price {
+    width: fit-content;
+    text-align: center;
+    margin-inline: auto 0;
   }
 }
 @media (max-width: 29.9988em) {
