@@ -553,7 +553,7 @@
 }
 .car__list {
   display: flex;
-  font-weight: 0.875rem; /* 14/16 */
+  font-size: 0.875rem; /* 14/16 */
   font-weight: 900;
   flex-wrap: wrap;
   gap: 0.75rem; /* 12/16 */
