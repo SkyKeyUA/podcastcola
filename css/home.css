@@ -252,8 +252,12 @@
 .thumbnails__videos {
   display: grid;
   justify-content: center;
+  font-size: 0;
 }
-.thumbnails__video video {
+.thumbnails__video {
+  aspect-ratio: 166 / 89;
+}
+.thumbnails__video iframe {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -324,7 +328,8 @@
   }
 }
 
-.advertising__title {
+.advertising__title,
+.backlinks__title {
   font-weight: 700;
   font-size: clamp(2.25rem, 6.875vw + 0.875rem, 5rem);
   margin-block-end: 1.25rem; /* 20/16 */
@@ -333,6 +338,19 @@
 .advertising__gradient {
   top: 50%;
   transform: translateY(-50%) rotateX(180deg);
+}
+
+.backlinks__columns {
+}
+.columns-thumbnails {
+}
+.columns-thumbnails--text {
+}
+.columns-thumbnails__column {
+}
+.backlinks__gradient {
+}
+.gradient {
 }
 @media (min-width: 29.9988em) {
   .optimization__body {
