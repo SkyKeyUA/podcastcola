@@ -1,5 +1,5 @@
 .footer {
-  background: #3d3d3d url('../img/footer-bg.png') no-repeat 0 bottom / cover;
+  background: var(--global-grey-80) url('../img/footer-bg.png') no-repeat 0 bottom / cover;
   padding-block: 1.875rem; /* 30/16 */
   line-height: 1.1;
 }
