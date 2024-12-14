@@ -64,6 +64,11 @@
     display: none;
   }
 }
+@media (max-width: 65.6238rem) {
+  .menu {
+    font-size: 1.75rem; /* 28/16 */
+  }
+}
 @media (max-width: 61.99875rem) {
   .header__link:after {
     animation: left 0.8s linear 0.8s;
