@@ -3,6 +3,7 @@
 .main {
 }
 .main__hero {
+  padding-block: 8.25rem 1.875rem; /* 102/16 */
 }
 .hero {
   position: relative;
@@ -620,13 +621,20 @@
     flex-basis: 21rem;
   }
 }
-
+@media (max-width: 61.9988rem) {
+  .main__hero {
+    padding-block: 8rem 1.875rem; /* 102/16 */
+  }
+}
 @media (max-width: 59.9988em) {
   .results__columns {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 47.9988em) {
+  .main__hero {
+    padding-block: 7rem 1.875rem; /* 102/16 */
+  }
   .guarantee__title,
   .guarantee__left {
     margin-block-end: 1rem;
@@ -643,6 +651,9 @@
   }
 }
 @media (max-width: 29.9988em) {
+  .main__hero {
+    padding-block: 6.5rem 1.875rem; /* 102/16 */
+  }
   .optimization__img {
     margin-left: auto;
   }

@@ -6,7 +6,13 @@
   --global-pink-100: #ff00ff;
   --global-purple-100: #9900ff;
   --global-purple-90: #880dfa;
+  --global-blue-80: #231fec99;
+  --global-blue-60: #5450f6;
   --global-blue-100: #00ffff;
   --global-grey-20: #d2d2d2;
   --main-font-family: 'Montserrat', sans-serif;
+
+  --shadow-link: 0px 0px 10px 0px var(--global-blue-80);
+  --header-menu: #e4e3ff;
+  --header-bg: #e4e3ffb2;
 }

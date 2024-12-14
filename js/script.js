@@ -1,4 +1,4 @@
-if (768 >= window.innerWidth) {
+if (992 >= window.innerWidth) {
   const menuToggle = document.querySelector('.icon-menu');
 
   menuToggle?.addEventListener('click', () => {
