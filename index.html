@@ -36,7 +36,12 @@
 			<div class="main__hero hero hero--main-section">
 				<div class="hero__container">
 					<div class="hero__logo"><img src="img/logo.webp" alt="logo podcastcola"></div>
-					<div class="hero__img"><img rel="preload" src="img/viral-mirage.webp" alt="viral mirage"></div>
+					<div class="hero__img">
+						<picture>
+							<source media="(max-width: 480px)" srcset="img/viral-mirage-small.webp">
+							<img src="img/viral-mirage.webp" alt="viral mirage" loading="lazy">
+						</picture>
+					</div>
 				</div>
 				<img class="hero__bg" src="img/hero-bg.webp" alt="backround hero section">
 			</div>

@@ -110,6 +110,7 @@
 .car__model {
 }
 .model {
+  display: flex;
   position: relative;
   margin-inline: auto 0;
 }
@@ -122,6 +123,7 @@
 .model__title {
   font-weight: 900;
   margin-block-end: 0.625rem; /* 10/16 */
+  text-transform: capitalize;
 }
 .model__month {
   font-weight: 600;
@@ -160,6 +162,9 @@
     color: var(--global-blue-60);
     background-color: var(--header-menu);
   }
+  .model:hover .model__price {
+    left: 2rem;
+  }
 }
 @media (min-width: 47.9988em) {
   .columns-thumbnails--video {
@@ -192,6 +197,7 @@
     left: 0;
     width: 81.226%; /* 636/783 */
     z-index: -1;
+    transition: left 0.3s ease;
   }
   .model--top .model__price {
     top: 30%;

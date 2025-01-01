@@ -443,10 +443,7 @@
   flex-direction: column;
   background-color: var(--global-white);
   box-shadow: -10px 10px 10px 0px var(--global-white);
-}
-.pricing__item:nth-child(3n + 1) {
-  background-color: var(--global-purple-100);
-  box-shadow: -10px 10px 10px 0px var(--global-purple-100);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 .pricing__price {
   font-weight: 600;
@@ -454,9 +451,7 @@
   margin-block-end: 1rem;
   text-align: center;
   color: var(--global-purple-100);
-}
-.pricing__item:nth-child(3n + 1) .pricing__price {
-  color: var(--global-white);
+  transition: color 0.3s ease;
 }
 .pricing__price span {
   font-size: 1.875rem; /* 30/16 */
@@ -586,6 +581,15 @@
   aspect-ratio: 1;
   flex-basis: 2.9375rem; /* 47/16 */
   flex-shrink: 0;
+}
+@media (any-hover: hover) {
+  .pricing__item:hover {
+    background-color: var(--global-purple-100);
+    box-shadow: -10px 10px 10px 0px var(--global-purple-100);
+  }
+  .pricing__item:hover .pricing__price {
+    color: var(--global-white);
+  }
 }
 @media (min-width: 29.9988em) {
   .optimization__body {
