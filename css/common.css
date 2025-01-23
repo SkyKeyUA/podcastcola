@@ -110,9 +110,8 @@
 .car__model {
 }
 .model {
-  display: flex;
   position: relative;
-  margin-inline: auto 0;
+  inline-size: 100%;
 }
 .model--base {
   max-width: 48.9375rem; /* 783/16 */
@@ -175,6 +174,10 @@
   }
   .columns-thumbnails--video .columns-thumbnails__column {
     max-width: 23rem; /* 368/16 */
+  }
+  .model {
+    display: flex;
+    margin-inline: auto 0;
   }
   .model__img {
     margin-inline: auto 0;
